@@ -17,4 +17,5 @@ datasource db {
 model Movie { 
   id    String  @id @default(auto()) @map("_id") @db.ObjectId
   title String
+  @@map("movies")
 } 
